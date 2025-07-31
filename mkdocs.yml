@@ -1,0 +1,19 @@
+site_name: YOLO Object Sorting Documentation
+site_url: https://sidhgurnani.github.io/yolo-object-sorter-docs/
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Introduction and Motivation: intro.md
+  - Architecture: architecture.md
+  - Development: 
+      - Software Versions: software_development.md
+      - Prototype Versions: prototype_development.md
+  - Final Testing: final_testing.md
+  - Results and Reflections: results.md
+
+repo_url: https://github.com/sidhgurnani/yolo-object-sorter-docs
+repo_name: GitHub
+edit_uri: edit/main/docs/
