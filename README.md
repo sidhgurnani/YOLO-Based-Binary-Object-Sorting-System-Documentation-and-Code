@@ -1,4 +1,4 @@
-# YOLO-Based-Binary-Object-Sorting-System-Documentation-and-Code
+# YOLO-Based Binary Object Sorting System Documentation and Code
 
 ## Introduction/Motivation
 When a bullet is fired at a crime scene it leaves behind a casing and the bullet itself. The bullet size varies depending on the gun that is being used, but each bullet contains a unique identification that can be traced back to a specific gun that it was fired with. There is currently a relatively outdated process in place, whereby an examiner will have to manually measure and identify markings. While more advanced versions of this technique can be used (standards determined by NIST), it still heavily relies on an examiner going through. While human input can be deemed necessary, it is an inefficient process that can be streamlined if the bullets were able to be somehow pre-sorted. This would save time and make the process more efficient. 
