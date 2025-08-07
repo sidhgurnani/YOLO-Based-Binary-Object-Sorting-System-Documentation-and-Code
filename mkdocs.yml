@@ -3,9 +3,51 @@ site_url: https://sidhgurnani.github.io/yolo-object-sorter-docs/
 
 theme:
   name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.expand
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - navigation.footer
+    # - content.action.edit
+    # - content.action.view
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: black
+      accent: deep orange
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Fira Code
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sidh-gurnani/
+      name: Connect on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/sidhgurnani
+    - icon: fontawesome/solid/envelope
+      link: mailto:sidh.gurnani@gmail.com
 
 nav:
   - Home: index.md
+  - Milestones: milestones.md
   - Introduction and Motivation: intro.md
   - Architecture: architecture.md
   - Development: 

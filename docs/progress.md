@@ -1,27 +1,14 @@
-# YOLO-Based Binary Object Sorting System
-
-Welcome! This GitHub page will contain documentation regarding what this project is about as well as progress for where I am at and all developments that have occured. This will serve as a log of my progress.
-
-Check out my [engineering portfolio](https://sites.google.com/view/sidh-gurnani-me-portfolio/home) to see other projects!
-
-## About Me
-
-My name is Sidh Gurnani, and I studied Mechanical Engineering at Purdue University, and graduated with my Bachelor's in May 2025. I have been working on this project since June 2024.
-
-## Project Milestones + Progress
-
-Here is a look at where I am at now: 
+# Project Progress
 
 <style>
 .progress-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-left: 4px solid #000000ff;
+  border-left: 4px solid #4A90E2;
   padding-left: 20px;
   margin-top: 2rem;
   font-size: 1.1rem;
-  font-family: inherit;
 }
 
 .progress-step {
@@ -35,12 +22,12 @@ Here is a look at where I am at now:
   left: -1.6em;
   top: 0;
   font-size: 1.2em;
-  color: #000000ff;
+  color: #4A90E2;
 }
 
 .current-step::before {
   content: '➤';
-  color: #0080ffff;
+  color: #e91e63;
   font-size: 1.2em;
 }
 </style>
