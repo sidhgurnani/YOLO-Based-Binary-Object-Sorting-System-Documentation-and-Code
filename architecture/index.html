@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#software-considerations" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -116,16 +121,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -469,6 +478,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -480,6 +502,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-software-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Early Software Decisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-software-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Software Decisions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prototype-considerations-work-in-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prototype Considerations (WORK IN PROGRESS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prototype Considerations (WORK IN PROGRESS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#early-prototype-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Early Prototype Decisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-prototype-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Prototype Decisions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -646,7 +751,39 @@
 
   <h1>Architecture</h1>
 
-
+<h2 id="software-considerations">Software Considerations</h2>
+<p>Early in the project timeline, the focus for any architectural decisions was heavily biased towards the software, as there are many possibilities for the software, and significantly fewer physical prototype solutions. </p>
+<h3 id="early-software-decisions">Early Software Decisions</h3>
+<p>Given that the project solution requires a cyberphysical system, it is best to work with some kind of microcontroller. In addition, since laptops can vary with processing power, age, graphics performance, etc, it is best to utilize a solution that is lighter on a laptop. The goal here is to have as many devices as possible be able to run the software. </p>
+<p>This is where the first major pathway to a solution arrives: using WebUSB. WebUSB is an API that allows certain compatible microcontrollers to be able to communicate to a web browser. This would open up the potential for users to be able to interact with the Arduino using an HTML file. Keeping this solution on a web browser would be able to allow the system to run much lighter.</p>
+<p>Such a solution can be seen with <a href="https://experiments.withgoogle.com/tiny-sorter/view/">Google's Tiny Sorter</a>, which is primarily used as a teaching tool to help people learn about computer vision and sorting. One of the main drawbacks about this solution is that it doesn't accomodate for a variety of object types, and would be difficult to sort larger and heavier objects. It also does not allow a user to input a pretrained model, and instead relies on the end user to train the system. If done improperly, or in bad lighting, then the model produced is not as accurate.</p>
+<p>This led me down a rabbit hole of using WebUSB and getting my hands on an Arduino Leonardo, which is a WebUSB-compatible Arduino. My findings about WebUSB are laid out in more detail <a href="../WebUSB_Findings/">here</a>.</p>
+<p>Long story short, WebUSB is not ideal (from a simplicity point of view) due to the communication protocol that needs to be put in place. With any webpage, a client and server is needed. However, this communication would have to be extended to the Arduino as well. With a large amount of communication happening between the user, client, server, and Arduino, there is bound to be a loss of data somewhere due to data being sent and recieved from multiple sources, essentially overloading the system. While the ideal scenario would be to run something like this, my prototype will not be using a web-based system to reduce the complexity of communicating information. </p>
+<h3 id="final-software-decisions">Final Software Decisions</h3>
+<p>Based on the information outlined above, I have chosen to run the program locally. A graphical user interface (GUI) will be built via Python, which will also handle communication to and from the Arduino via a serial communication port. </p>
+<p>The GUI will allow the user to dictate what gets done and when as well as monitor the whole system and provide that information to the user. A GUI can be constructed in many ways, however, I have chosen to use tkinter for Python. </p>
+<p>Communication to and from the Arduino via a serial communication port is a good option as it allows data to be sent to and from using one channel, whereas using WebUSB would mean data has to transfer from client to server to Arduino. </p>
+<p>More technical details can be seen on the development pages, where the software versions are outlined as I iterate through them towards a working solution. </p>
+<h2 id="prototype-considerations-work-in-progress">Prototype Considerations (WORK IN PROGRESS)</h2>
+<h3 id="early-prototype-decisions">Early Prototype Decisions</h3>
+<p>Early on, the choice had to be made to decide whether to design a prototype that works well with one kind of object or womething that won't work as well but can support a varierty of objects. </p>
+<p>Initially, I thought about going with the former. Coins are something that a lot of people have at their homes, including myself, and I thought testing using that would be great. I had initially wanted to design a system that works really well with coins, but coins only. However, it is more ideal to use a system that can support a variety of objects, even at reduced ability and capacity, as it allows for a proper proof of concept to be established with a relatively universal solution.</p>
+<p>There are more things that need to be figured out before designing any prototype:</p>
+<ul>
+<li>How are objects fed into system?</li>
+<li>What happens if the user cannot feed objects one-by-one? How does the system handle this?</li>
+<li>How can the system detect the objects in a webcam? Should a box be built around the webcam and an LED to illuminate it or is there another solution?</li>
+<li>What mode of movement should objects use when sending an object to the webcam and from the webcam to the bin?</li>
+<li>etc...</li>
+</ul>
+<h3 id="final-prototype-decisions">Final Prototype Decisions</h3>
+<p>Here are some answers to some of the questions I posed above?</p>
+<ul>
+<li><strong>How are objects fed into system?</strong> &rarr; They can be fed one by one or ideally, through some kind of feeder, either vibration based or centrifugal.</li>
+<li><strong>What happens if the user cannot feed objects one-by-one? How does the system handle this?</strong> &rarr; Using something like a feeder can allow objects to be fed more uniformly, regardless of how the user would load the objects.</li>
+<li><strong>How can the system detect the objects in a webcam? Should a box be built around the webcam and an LED to illuminate it or is there another solution?</strong> &rarr; ....</li>
+<li><strong>What mode of movement should objects use when sending an object to the webcam and from the webcam to the bin?</strong> &rarr; ....</li>
+</ul>
 
 
 
@@ -778,8 +915,6 @@
     
     
       <script src="../assets/javascripts/bundle.50899def.min.js"></script>
-      
-        <script src="https://cloud.umami.is/script.js"></script>
       
     
   </body>
