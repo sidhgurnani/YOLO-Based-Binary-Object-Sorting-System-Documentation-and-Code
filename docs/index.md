@@ -2,7 +2,7 @@
 
 Welcome! This GitHub page will contain documentation regarding what this project is about as well as progress for where I am at and all developments that have occured. This will serve as a log of my progress.
 
-Check out my [engineering portfolio](https://sites.google.com/view/sidh-gurnani-me-portfolio/home) to see other projects!
+Check out my [engineering portfolio](https://sidhgurnani.github.io/sidh-ME-portfolio/) to see other projects!
 
 ## About Me
 
