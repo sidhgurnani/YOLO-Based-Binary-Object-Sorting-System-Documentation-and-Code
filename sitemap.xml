@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/WebUSB_Findings/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/architecture/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/final_testing/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/intro/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/milestones/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/progress/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/prototype_development/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/results/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
     </url>
     <url>
          <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/software_development/</loc>
-         <lastmod>2025-08-09</lastmod>
+         <lastmod>2025-08-10</lastmod>
+    </url>
+    <url>
+         <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/software_v1/</loc>
+         <lastmod>2025-08-10</lastmod>
+    </url>
+    <url>
+         <loc>https://sidhgurnani.github.io/yolo-object-sorter-docs/software_v2/</loc>
+         <lastmod>2025-08-10</lastmod>
     </url>
 </urlset>

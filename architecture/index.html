@@ -300,6 +300,13 @@
   
     
     
+      
+  
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
         <a href="../software_development/" class="md-tabs__link">
           
@@ -309,6 +316,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -639,13 +649,56 @@
   
   
   
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Software Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Software Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../software_development/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Software Versions
+    Software Development Overview
     
   </span>
   
@@ -663,12 +716,89 @@
   
   
     <li class="md-nav__item">
+      <a href="../WebUSB_Findings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Version 0 - WebUSB Findings (Abandoned)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Version 1 (Intermediate)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Version 2 (Minimum Viable Software Achieved)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../prototype_development/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Prototype Versions
+    Prototype Development
     
   </span>
   
@@ -751,21 +881,21 @@
 
   <h1>Architecture</h1>
 
-<h2 id="software-considerations">Software Considerations</h2>
+<h2 id="software-considerations">Software Considerations<a class="headerlink" href="#software-considerations" title="Permanent link">&para;</a></h2>
 <p>Early in the project timeline, the focus for any architectural decisions was heavily biased towards the software, as there are many possibilities for the software, and significantly fewer physical prototype solutions. </p>
-<h3 id="early-software-decisions">Early Software Decisions</h3>
+<h3 id="early-software-decisions">Early Software Decisions<a class="headerlink" href="#early-software-decisions" title="Permanent link">&para;</a></h3>
 <p>Given that the project solution requires a cyberphysical system, it is best to work with some kind of microcontroller. In addition, since laptops can vary with processing power, age, graphics performance, etc, it is best to utilize a solution that is lighter on a laptop. The goal here is to have as many devices as possible be able to run the software. </p>
 <p>This is where the first major pathway to a solution arrives: using WebUSB. WebUSB is an API that allows certain compatible microcontrollers to be able to communicate to a web browser. This would open up the potential for users to be able to interact with the Arduino using an HTML file. Keeping this solution on a web browser would be able to allow the system to run much lighter.</p>
 <p>Such a solution can be seen with <a href="https://experiments.withgoogle.com/tiny-sorter/view/">Google's Tiny Sorter</a>, which is primarily used as a teaching tool to help people learn about computer vision and sorting. One of the main drawbacks about this solution is that it doesn't accomodate for a variety of object types, and would be difficult to sort larger and heavier objects. It also does not allow a user to input a pretrained model, and instead relies on the end user to train the system. If done improperly, or in bad lighting, then the model produced is not as accurate.</p>
-<p>This led me down a rabbit hole of using WebUSB and getting my hands on an Arduino Leonardo, which is a WebUSB-compatible Arduino. My findings about WebUSB are laid out in more detail <a href="../WebUSB_Findings/">here</a>.</p>
+<p>This led me down a rabbit hole of using WebUSB and getting my hands on an Arduino Leonardo, which is a WebUSB-compatible Arduino. My findings about WebUSB are laid out in more detail <a href="../WebUSB_Findings/">here</a>. Note that this page can also be found by navigating via the development section, so you can view it then as well.</p>
 <p>Long story short, WebUSB is not ideal (from a simplicity point of view) due to the communication protocol that needs to be put in place. With any webpage, a client and server is needed. However, this communication would have to be extended to the Arduino as well. With a large amount of communication happening between the user, client, server, and Arduino, there is bound to be a loss of data somewhere due to data being sent and recieved from multiple sources, essentially overloading the system. While the ideal scenario would be to run something like this, my prototype will not be using a web-based system to reduce the complexity of communicating information. </p>
-<h3 id="final-software-decisions">Final Software Decisions</h3>
+<h3 id="final-software-decisions">Final Software Decisions<a class="headerlink" href="#final-software-decisions" title="Permanent link">&para;</a></h3>
 <p>Based on the information outlined above, I have chosen to run the program locally. A graphical user interface (GUI) will be built via Python, which will also handle communication to and from the Arduino via a serial communication port. </p>
 <p>The GUI will allow the user to dictate what gets done and when as well as monitor the whole system and provide that information to the user. A GUI can be constructed in many ways, however, I have chosen to use tkinter for Python. </p>
 <p>Communication to and from the Arduino via a serial communication port is a good option as it allows data to be sent to and from using one channel, whereas using WebUSB would mean data has to transfer from client to server to Arduino. </p>
 <p>More technical details can be seen on the development pages, where the software versions are outlined as I iterate through them towards a working solution. </p>
-<h2 id="prototype-considerations-work-in-progress">Prototype Considerations (WORK IN PROGRESS)</h2>
-<h3 id="early-prototype-decisions">Early Prototype Decisions</h3>
+<h2 id="prototype-considerations-work-in-progress">Prototype Considerations (WORK IN PROGRESS)<a class="headerlink" href="#prototype-considerations-work-in-progress" title="Permanent link">&para;</a></h2>
+<h3 id="early-prototype-decisions">Early Prototype Decisions<a class="headerlink" href="#early-prototype-decisions" title="Permanent link">&para;</a></h3>
 <p>Early on, the choice had to be made to decide whether to design a prototype that works well with one kind of object or womething that won't work as well but can support a varierty of objects. </p>
 <p>Initially, I thought about going with the former. Coins are something that a lot of people have at their homes, including myself, and I thought testing using that would be great. I had initially wanted to design a system that works really well with coins, but coins only. However, it is more ideal to use a system that can support a variety of objects, even at reduced ability and capacity, as it allows for a proper proof of concept to be established with a relatively universal solution.</p>
 <p>There are more things that need to be figured out before designing any prototype:</p>
@@ -776,7 +906,7 @@
 <li>What mode of movement should objects use when sending an object to the webcam and from the webcam to the bin?</li>
 <li>etc...</li>
 </ul>
-<h3 id="final-prototype-decisions">Final Prototype Decisions</h3>
+<h3 id="final-prototype-decisions">Final Prototype Decisions<a class="headerlink" href="#final-prototype-decisions" title="Permanent link">&para;</a></h3>
 <p>Here are some answers to some of the questions I posed above?</p>
 <ul>
 <li><strong>How are objects fed into system?</strong> &rarr; They can be fed one by one or ideally, through some kind of feeder, either vibration based or centrifugal.</li>
@@ -838,13 +968,13 @@
         
         
           
-          <a href="../software_development/" class="md-footer__link md-footer__link--next" aria-label="Next: Software Versions">
+          <a href="../software_development/" class="md-footer__link md-footer__link--next" aria-label="Next: Software Development Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Software Versions
+                Software Development Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
