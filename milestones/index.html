@@ -146,48 +146,6 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
-    
     
       <div class="md-header__source">
         <a href="https://github.com/sidhgurnani/yolo-object-sorter-docs" title="Go to repository" class="md-source" data-md-component="source">
@@ -793,9 +751,25 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../prototype_development/" class="md-nav__link">
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -804,7 +778,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Prototype Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototype_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prototype Development Overview
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibration_bowl_feeder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vibration Bowl Feeder Development (WORK IN PROGRESS)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -880,9 +912,9 @@
   
 
 
-<h1 id="milestones">Milestones<a class="headerlink" href="#milestones" title="Permanent link">&para;</a></h1>
+<div><h1 id="milestones">Milestones<a class="headerlink" href="#milestones" title="Permanent link">¶</a></h1>
 <p>This page will contain a bit of information about each milestone as shown on the main page, including some of the goals of each, and if applicable, anything I have done to ensure that the milestone will be marked as "complete". For example, for testing, this page will contain information about any initially planned test runs, but will not cover the results. For more details descriptions of the architecture, design, testing, etc, view those respective pages in the navigation. </p>
-<h2 id="1-refresh-programming-knowledge">1. Refresh Programming Knowledge<a class="headerlink" href="#1-refresh-programming-knowledge" title="Permanent link">&para;</a></h2>
+<h2 id="1-refresh-programming-knowledge">1. Refresh Programming Knowledge<a class="headerlink" href="#1-refresh-programming-knowledge" title="Permanent link">¶</a></h2>
 <p>Based on my personal experiences, this phase of the project was more of a refresher for me. However, someone with less background with coding, in my opinion, should go through some coding lessons online and/or take a class. </p>
 <p>Prior to starting this project, I had used the following:</p>
 <ul>
@@ -897,7 +929,7 @@
 <p>After that, I learned how to program Arduinos using the Arduino IDE, albeit in a more nontraditional sense where I was introduced to everything in a more practical sense, and have since fine tuned my abilities through project-based learning. </p>
 <p>That being said, I had a decent background when it came to coding, so a few lessons in Python from YouTube were enough to get me going again and ready to learn more.</p>
 <p>For someone looking to replicate this, I would strongly suggest learning Python, as that is the programming language that is used throughout this project, as well as learning the basics behind working with Arduinos and familiarity with the IDE. I will also be using PlatformIO to run my project entirely in VSCode instead of using two different IDEs.</p>
-<h2 id="2-understand-basics-of-machine-learning">2. Understand Basics of Machine Learning<a class="headerlink" href="#2-understand-basics-of-machine-learning" title="Permanent link">&para;</a></h2>
+<h2 id="2-understand-basics-of-machine-learning">2. Understand Basics of Machine Learning<a class="headerlink" href="#2-understand-basics-of-machine-learning" title="Permanent link">¶</a></h2>
 <p>Prior to starting this project, I had zero experience with Machine Learning. This is what I did to familiarize myself with the basics of ML. I ended up taking free online classes to refresh my Python knowledge and expand that understanding into machine learning. Links to the classes are below, with certificates on my LinkedIn page.</p>
 <ul>
 <li><a href="https://cognitiveclass.ai/courses/machine-learning-with-python">Machine Learning with Python course | Cognitive Class</a></li>
@@ -908,7 +940,7 @@
 <li><a href="https://cognitiveclass.ai/courses/precise-predictions-classification-for-flower-and-tumors">Precise Predictions: Classification for Flower and Tumors</a></li>
 </ul>
 <p>While this is not by any means a guide to learning machine learning, the emphasis for this project was to familiarize myself with it and get better at implementing it as I progress through this project. </p>
-<h2 id="3-develop-basic-software">3. Develop Basic Software<a class="headerlink" href="#3-develop-basic-software" title="Permanent link">&para;</a></h2>
+<h2 id="3-develop-basic-software">3. Develop Basic Software<a class="headerlink" href="#3-develop-basic-software" title="Permanent link">¶</a></h2>
 <p>Developing basic software entails having code up and running for the software side of this project, which entails mainly getting YOLO working as well as setting up the interface and all basic functions that need to be in place for this to be successful. At the minimum, here is what is expected:</p>
 <ul>
 <li>Be intuitive to use, and look somewhat polished</li>
@@ -918,7 +950,7 @@
 <li>Leverage webcam to detect objects</li>
 <li>Have some error handling in place and prevent user from going too far out of order</li>
 </ul>
-<h2 id="4-3d-model-and-design-physical-product">4. 3D Model and Design Physical Product<a class="headerlink" href="#4-3d-model-and-design-physical-product" title="Permanent link">&para;</a></h2>
+<h2 id="4-3d-model-and-design-physical-product">4. 3D Model and Design Physical Product<a class="headerlink" href="#4-3d-model-and-design-physical-product" title="Permanent link">¶</a></h2>
 <p>The goal here is to design a minimum viable prototype, where the parts and system is able to work adequately well and a well established proof of concept is present. At the minimum, here is what is expected:</p>
 <ul>
 <li>Be simple to use for the end user</li>
@@ -927,17 +959,17 @@
 <li>Objects should get sorted into 2 bins, where one is the target and the other is not the target, hence the "binary" aspect of the sorter</li>
 <li>Keep costs as low as possible, with the aim to be reproducible</li>
 </ul>
-<h2 id="5-integrate-software-and-hardware">5. Integrate Software and Hardware<a class="headerlink" href="#5-integrate-software-and-hardware" title="Permanent link">&para;</a></h2>
+<h2 id="5-integrate-software-and-hardware">5. Integrate Software and Hardware<a class="headerlink" href="#5-integrate-software-and-hardware" title="Permanent link">¶</a></h2>
 <p>Once basic software and working prototype are set up, work needs to be done to integrate the software and prototype made earlier. Here, the different modes will be properly established:</p>
 <ul>
 <li>Object Detection Mode: Here, objects will pass through the mechanical system in place and not do any kind of sorting. The goal is to detect a list of unique objects so that the number of passes the system requires can be established.</li>
 <li>Object Sorting Mode: Here, objects will be sorted through the system, with motors/actuators being used to facilitate the sorting process.</li>
 </ul>
 <p>At this point, small scale testing will be carried out. The aim here is to get around 10-20 objects with at least 3 unique classes of objects properly sorted. </p>
-<h2 id="6-final-testing">6. Final Testing<a class="headerlink" href="#6-final-testing" title="Permanent link">&para;</a></h2>
+<h2 id="6-final-testing">6. Final Testing<a class="headerlink" href="#6-final-testing" title="Permanent link">¶</a></h2>
 <p>At this point, the system is well established, and the testing can be slightly scaled up. In addition, different models will be tested to ensure that the system is more "plug and play", where the end user will be able to train or load in a pytorch model to be used with YOLO.</p>
-<h2 id="7-reflection-and-next-steps">7. Reflection and Next Steps<a class="headerlink" href="#7-reflection-and-next-steps" title="Permanent link">&para;</a></h2>
-<p>Reflections will be made here to discuss flaws of working prototype as well as a path forward should the project timeline be extended.</p>
+<h2 id="7-reflection-and-next-steps">7. Reflection and Next Steps<a class="headerlink" href="#7-reflection-and-next-steps" title="Permanent link">¶</a></h2>
+<p>Reflections will be made here to discuss flaws of working prototype as well as a path forward should the project timeline be extended.</p></div>
 
 
 

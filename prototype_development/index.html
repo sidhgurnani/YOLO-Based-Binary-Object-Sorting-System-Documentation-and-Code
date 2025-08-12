@@ -14,7 +14,7 @@
         <link rel="prev" href="../software_v2/">
       
       
-        <link rel="next" href="../final_testing/">
+        <link rel="next" href="../vibration_bowl_feeder/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Prototype Development - YOLO Object Sorting Documentation</title>
+        <title>Prototype Development Overview - YOLO Object Sorting Documentation</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#requirements" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prototype Development
+              Prototype Development Overview
             
           </span>
         </div>
@@ -140,48 +145,6 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
     
     
       <div class="md-header__source">
@@ -690,14 +653,23 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
+    
+    
+    
+    
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -706,7 +678,144 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Prototype Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Prototype Development Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prototype Development Overview
+    
+  </span>
+  
+
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considered-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Considered Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Considered Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-feeding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Feeding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transporting-objects-for-detection-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transporting Objects for Detection and Sorting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibration_bowl_feeder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vibration Bowl Feeder Development (WORK IN PROGRESS)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -783,9 +892,203 @@
   
 
 
-  <h1>Prototype Development</h1>
+  <h1>Prototype Development Overview</h1>
 
+<div><p>This page provides a little introduction to what is required by the prototype and how I aim to solve those requirements. </p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">¶</a></h2>
+<p>First off, here is a list of basic requirements:</p>
+<ul>
+<li>Prototype must allow user to be able to load objects with relative ease, without having to worry too much about the orientation and the type of object loaded.</li>
+<li>Prototype must be able to work with, or show potential to work with, a variety of objects with differing geometry, weight, size, etc.</li>
+<li>Prototype must allow objects to be visible from the webcam and allow the YOLO software to be able to detect and sort objects.</li>
+<li>Prototype must accomodate a "target" and "other" bin, to allow for binary sorting.</li>
+<li>Prototype must allow all electronics to be easily accessible to user to allow for debugging and/or allow for any required work to be performed (rewiring, reconnecting, etc) while also not interfering with the sorting process.</li>
+<li>Prototype must contain a manual override to allow for human intervention in case of failure or unexpected errors.</li>
+<li>Prototype must be able to sort, or show potential to sort, with relative high accuracy.</li>
+</ul>
+<div><br></div>
 
+<p><strong>The list above details all basic requirements, however it leaves out a few desireable features, which would be implemented if the project timeline were to be extended. Ideally, the prototype will also contain:</strong></p>
+<ul>
+<li><strong>Error Handling →</strong> System should have a way of knowing when something has gone wrong and attempt a correction.</li>
+<li><strong>Scalability →</strong> System should be "plug and play", where there would not be much work to scale this up to whatever application it is required for.</li>
+</ul>
+<div><br></div>
+
+<h2 id="considered-solutions">Considered Solutions<a class="headerlink" href="#considered-solutions" title="Permanent link">¶</a></h2>
+<p>Based on the list of basic requirements above, here are solutions being considered for the broader aspects of the prototype.</p>
+<h3 id="object-feeding">Object Feeding<a class="headerlink" href="#object-feeding" title="Permanent link">¶</a></h3>
+<p>What is being considered?</p>
+<ul>
+<li>Vibration Bowl Feeder</li>
+<li>Centrifugal Feeder</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Vibration Bowl Feeder</th>
+<th>Centrifugal Feeder</th>
+<th>Notes / Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Easy loading of objects without worrying about orientation or type</td>
+<td>✔️ Meets</td>
+<td>✔️ Meets</td>
+<td>Vibration Bowl Feeders feed slower, but are more reliable; Centrifugal will require a stronger motor or a high torque gear train, is simpler, but is less universal</td>
+</tr>
+<tr>
+<td>Works with a variety of object sizes, weights, and shapes</td>
+<td>⚠️ Partially meets</td>
+<td>⚠️ Partially meets</td>
+<td>Both concepts are limited by bowl geometry to an extent, but not heavily affected by it for prototype purposes</td>
+</tr>
+<tr>
+<td>Allows objects to be visible for YOLO detection</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Object visibility depends on camera setup, independent of feeder</td>
+</tr>
+<tr>
+<td>Accommodates “target” and “other” sorting bins</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Sorting bins are outside the feeder design</td>
+</tr>
+<tr>
+<td>Electronics easily accessible for debugging</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Electronics housing will be designed separately</td>
+</tr>
+<tr>
+<td>Manual override for human intervention</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Manual override controlled elsewhere, not part of feeder</td>
+</tr>
+<tr>
+<td>High accuracy sorting capability</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Sorting accuracy depends on YOLO models</td>
+</tr>
+</tbody>
+</table>
+<p>When comparing both solutions on paper, there is no obvious standout choice to start with, I will also do a quick comparison below to highlight a path forward.</p>
+<table>
+<thead>
+<tr>
+<th>Prototype Feasibility Requirement</th>
+<th>Vibration Bowl Feeder</th>
+<th>Centrifugal Feeder</th>
+<th>Notes / Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Relative Mechanical Complexity</td>
+<td>🟢 Less complex</td>
+<td>🔴 More complex</td>
+<td>Vibration Bowl Feeder will have less mechanical components to work with; Centrigufal Feeder will have more mechanical components to work with and has to be designed more carefully</td>
+</tr>
+<tr>
+<td>Relative Electrical Complexity</td>
+<td>🔴 Slightly more complex</td>
+<td>🟢 Slightly less complex</td>
+<td>Vibration Bowl Feeders will need extra tuning and sourcing of electrical components; Centrifugal Bowl Feeders will require less elctrical components and thus less complexity</td>
+</tr>
+<tr>
+<td>Relative Costs</td>
+<td>⚪ Similar</td>
+<td>⚪ Similar</td>
+<td>Both will cost a similar amount to put together, which includes costs of making and sourcing components</td>
+</tr>
+<tr>
+<td>Prototype-able?</td>
+<td>⚪ Similar</td>
+<td>⚪ Similar</td>
+<td>Both concepts can be 3D printed</td>
+</tr>
+<tr>
+<td>Reproducible?</td>
+<td>🟢 Slightly More</td>
+<td>🔴 Slightly Less</td>
+<td>Vibration Bowl Feeders have less parts to put together, which reduces chances of parts not fitting together after 3D printing</td>
+</tr>
+<tr>
+<td>Scalable</td>
+<td>⚪ Similar</td>
+<td>⚪ Similar</td>
+<td>Both concepts can be adapted and scaled in a post-project timeline to fit the needs required through changing out any components that were sources and altering dimensions on STL files</td>
+</tr>
+</tbody>
+</table>
+<p>Both are pretty equal in terms of viablility, but the vibration bowl feeder is slightly less complex overall and has the potential to be more reproducible to other people. Therefore, I will stick to making a vibration bowl feeder for now.</p>
+<h3 id="transporting-objects-for-detection-and-sorting">Transporting Objects for Detection and Sorting<a class="headerlink" href="#transporting-objects-for-detection-and-sorting" title="Permanent link">¶</a></h3>
+<p>This section deals with solutions being considered to handle moving the objects being sorted from the feeding mechanism to the webcam'e field of view and then to the bins. </p>
+<p>What is being considered?</p>
+<ul>
+<li><strong>Option 1:</strong> System of Linear Tracks → Webcam's FOV (via a enclosure) → Bins</li>
+<li><strong>Option 2:</strong> 3D Printed Conveyor Belt → Webcam's FOV (viewable by using mirror to reorient FOV) → Bins</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Option 1</th>
+<th>Option 2</th>
+<th>Notes / Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Easy loading of objects without worrying about orientation or type</td>
+<td>⚠️ Potential negative</td>
+<td>✔️ Meets</td>
+<td>I will focus on loading in the context of going to webcam FOV and then to bins; Option 1 has to be designed carefully to accomodate a vast amount of objects; Option 2 is more universal and doesn't deoend on orientation or type</td>
+</tr>
+<tr>
+<td>Works with a variety of object sizes, weights, and shapes</td>
+<td>⚠️ Potential Negative</td>
+<td>✔️ Meets</td>
+<td>Option 1 is limited in terms of track geometry; Option 2 more universal</td>
+</tr>
+<tr>
+<td>Allows objects to be visible for YOLO detection</td>
+<td>⚠️ Potential Negative</td>
+<td>✔️ Meets</td>
+<td>Option 1's enclosure has to designed to either allow in natural ambient light or be well-lit; Option 2 uses ambient lighting, which works reasonably well</td>
+</tr>
+<tr>
+<td>Accommodates “target” and “other” sorting bins</td>
+<td>✔️ Meets</td>
+<td>✔️ Meets</td>
+<td>Sorting bins can be integrated into both solutions</td>
+</tr>
+<tr>
+<td>Electronics easily accessible for debugging</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Electronics housing will be designed separately</td>
+</tr>
+<tr>
+<td>Manual override for human intervention</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Manual override controlled elsewhere, not part transportation sub-system</td>
+</tr>
+<tr>
+<td>High accuracy sorting capability</td>
+<td>➖ No effect</td>
+<td>➖ No effect</td>
+<td>Sorting accuracy depends on YOLO models</td>
+</tr>
+</tbody>
+</table>
+<p>Based on requirements alone, there is a clear path forward. At worst, a conveyor belt will be able to provide more proof of concept than the linear track system, and at best, it will be a sub-system that is more universal. No feasibility study will be conducted unless something goes wrong with the conveyor belt concept.</p></div>
 
 
 
@@ -840,13 +1143,13 @@
         
         
           
-          <a href="../final_testing/" class="md-footer__link md-footer__link--next" aria-label="Next: Final Testing">
+          <a href="../vibration_bowl_feeder/" class="md-footer__link md-footer__link--next" aria-label="Next: Vibration Bowl Feeder Development (WORK IN PROGRESS)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Final Testing
+                Vibration Bowl Feeder Development (WORK IN PROGRESS)
               </div>
             </div>
             <div class="md-footer__button md-icon">
